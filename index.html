@@ -1,77 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumathi Shanmugam | AWS Cloud & DevOps Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; background:#f4f6f8; color:#333; }
-        header { background:#232f3e; color:white; text-align:center; padding:30px; }
-        header h1 { margin:0; }
-        section { margin:20px; padding:20px; background:white; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-        h2 { color:#ff9900; }
-        h3 { margin-top:10px; }
-        a { color:#0073e6; text-decoration:none; }
-        a:hover { text-decoration:underline; }
-        ul { padding-left:20px; }
-        footer { text-align:center; padding:15px; background:#232f3e; color:white; }
-        .project { margin-bottom:20px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumathi Shanmugam | AWS Cloud Engineer</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 { margin: 0; }
+
+/* Section */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Projects Grid */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+a.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #ff9900;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #232f3e;
+    color: white;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Hi, I'm Sumathi 👋</h1>
-    <p>Aspiring AWS Cloud & DevOps Engineer</p>
+    <h1>Hi, I'm Sumathi Shanmugam 👋</h1>
+    <p>AWS Cloud & DevOps Engineer</p>
 </header>
 
-<section>
+<section class="card">
     <h2>💼 About Me</h2>
     <p>
-        AWS Cloud & DevOps Engineer with hands-on experience in building scalable, secure, and highly available infrastructure.
-        Skilled in automation, CI/CD pipelines, security compliance, and monitoring solutions.
+        AWS Cloud & DevOps Engineer with hands-on experience in designing scalable, secure, and highly available infrastructure on AWS.
+    </p>
+    <p>
+        Skilled in CI/CD, Terraform, Docker, and monitoring solutions. Experienced in managing production systems, ensuring uptime, and optimizing performance.
     </p>
 </section>
 
 <section>
     <h2>🚀 Projects</h2>
 
-    <div class="project">
-        <h3>🔹 FastAPI CI/CD Project on AWS</h3>
-        <p>Terraform + Docker + CodePipeline</p>
-        <p>Repo: <a href="https://github.com/sumathi1805/fastapi-terraform-cicd-aws" target="_blank">View on GitHub</a></p>
-    </div>
+    <div class="projects">
 
-    <div class="project">
-        <h3>🔹 Automated EC2 Quarantine and Incident Response</h3>
-        <p>Using AWS GuardDuty and Systems Manager in secure VPC environment</p>
-        <p>Repo: <a href="https://github.com/sumathi1805/Incidenct-Response-Project" target="_blank">View on GitHub</a></p>
-    </div>
+        <div class="project-card">
+            <h3>FastAPI CI/CD</h3>
+            <p>Terraform + Docker + CodePipeline deployment</p>
+            <a class="button" href="https://github.com/sumathi1805/fastapi-terraform-cicd-aws">View Project</a>
+        </div>
 
-    <div class="project">
-        <h3>🔹 AWS S3 Public Access Restricted</h3>
-        <p>Automation project to prohibit public access</p>
-        <p>Repo: <a href="https://github.com/sumathi1805/Automate-AWS-S3-public-access-prohibited-Project" target="_blank">View on GitHub</a></p>
-    </div>
+        <div class="project-card">
+            <h3>Incident Response</h3>
+            <p>GuardDuty + EventBridge + SSM automation</p>
+            <a class="button" href="https://github.com/sumathi1805/Incidenct-Response-Project">View Project</a>
+        </div>
 
-    <div class="project">
-        <h3>🔹 Automation with CloudFormation</h3>
-        <p>Infrastructure as Code project using CloudFormation</p>
-        <p>Repo: <a href="https://github.com/sumathi1805/project-2" target="_blank">View on GitHub</a></p>
-    </div>
+        <div class="project-card">
+            <h3>S3 Security Automation</h3>
+            <p>Automatic public access remediation</p>
+            <a class="button" href="https://github.com/sumathi1805/Automate-AWS-S3-public-access-prohibited-Project">View Project</a>
+        </div>
 
-    <div class="project">
-        <h3>🔹 Web Application: Fitness Training NEOGYM</h3>
-        <p>Full-stack web application hosted on AWS</p>
-        <p>Repo: <a href="https://github.com/sumathi1805/project-1" target="_blank">View on GitHub</a></p>
-    </div>
+        <div class="project-card">
+            <h3>CloudFormation IaC</h3>
+            <p>Automated infrastructure deployment</p>
+            <a class="button" href="https://github.com/sumathi1805/project-2">View Project</a>
+        </div>
 
-    <div class="project">
-        <h3>🔹 AWS Cost Optimization</h3>
-        <p>Identified and removed unused AWS resources to optimize cost</p>
-        <p>Repo: <a href="https://github.com/sumathi1805/project-3" target="_blank">View on GitHub</a></p>
-    </div>
+        <div class="project-card">
+            <h3>NEOGYM Web App</h3>
+            <p>Scalable app with ALB & Auto Scaling</p>
+            <a class="button" href="https://github.com/sumathi1805/project-1">View Project</a>
+        </div>
 
+        <div class="project-card">
+            <h3>AWS Cost Optimization</h3>
+            <p>Identified and removed unused resources</p>
+            <a class="button" href="https://github.com/sumathi1805/project-3">View Project</a>
+        </div>
+
+    </div>
 </section>
 
 <section>
@@ -99,7 +165,11 @@
 <section>
     <h2>📧 Contact</h2>
     <p>Email: malars12@gmail.com</p>
-    
+    <p>
+        <a class="button" href="https://www.linkedin.com/in/sumathi-shanmugam-2b8066299" target="_blank">
+            View My LinkedIn Profile
+        </a>
+    </p>
 </section>
 
 <footer>
